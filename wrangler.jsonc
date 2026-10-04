@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "reranker-rag",
+  "main": "src/worker.js",
+  "compatibility_date": "2024-11-01",
+  "ai": { "binding": "AI" },
+  "vars": { "LLM_MODEL": "openai/gpt-oss-120b" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "reranker-rag-db", "database_id": "6d38ec6c-e80a-43da-9f12-b7fe9a5376d9" }
+  ]
+}
